@@ -66,15 +66,15 @@ export default function StoreGallery() {
   };
 
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-gray-50 py-8 sm:py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Scrollable Gallery */}
         <div className="overflow-x-auto scrollbar-hide">
-          <div className="flex gap-6 pb-8">
+          <div className="flex gap-4 sm:gap-6 pb-8">
             {stores.map((store, index) => (
               <div
                 key={store.id}
-                className="relative shrink-0 w-[500px] h-[700px] group cursor-pointer"
+                className="relative shrink-0 w-[280px] h-[400px] sm:w-[400px] sm:h-[550px] md:w-[500px] md:h-[700px] group cursor-pointer"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
               >
@@ -136,11 +136,11 @@ export default function StoreGallery() {
         </div>
 
         {/* Text Content */}
-        <div className="mt-12 max-w-3xl">
-          <p className="text-xs tracking-wide text-gray-800 mb-4">
+        <div className="mt-8 sm:mt-12 max-w-3xl">
+          <p className="text-[10px] sm:text-xs tracking-wide text-gray-800 mb-4">
             FEEL THE LUXURY OF PREMIUM STREETWEAR WITH BLUORNG - BEST UNISEX CLOTHING BRAND IN INDIA
           </p>
-          <button className="text-xs tracking-wide text-gray-800 hover:text-black transition-colors underline underline-offset-4">
+          <button className="text-[10px] sm:text-xs tracking-wide text-gray-800 hover:text-black transition-colors underline underline-offset-4">
             READ MORE...
           </button>
         </div>

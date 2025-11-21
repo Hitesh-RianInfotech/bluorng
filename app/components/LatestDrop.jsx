@@ -43,11 +43,11 @@ export default function LatestDrop() {
   ];
 
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <h1 className='text-black mb-4' >LATEST DROP</h1>
+    <section className="bg-gray-100 py-8 sm:py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <h1 className='text-black mb-4 sm:mb-6 text-lg sm:text-xl md:text-2xl' >LATEST DROP</h1>
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {products.map((product) => (
             <Link
               key={product.id}
@@ -91,8 +91,8 @@ export default function LatestDrop() {
         </div>
 
         {/* Discover More Button */}
-        <div className="flex justify-center mt-12">
-          <button className="px-6 py-2 text-black border-2 border-black text-sm tracking-wider font-medium hover:bg-black cursor-pointer hover:text-white transition-colors duration-300">
+        <div className="flex justify-center mt-8 sm:mt-12">
+          <button className="px-4 sm:px-6 py-2 text-black border-2 border-black text-xs sm:text-sm tracking-wider font-medium hover:bg-black cursor-pointer hover:text-white transition-colors duration-300">
             DISCOVER MORE
           </button>
         </div>

@@ -35,13 +35,13 @@ export default function AutoplayVideo() {
       <div className="absolute inset-0 bg-black/20" />
 
       {/* Content Overlay (Optional) */}
-      <div className="relative z-10 flex items-center justify-center h-full">
+      <div className="relative z-10 flex items-center justify-center h-full px-4">
         <div className="text-center text-white">
-          <h1 className="font-serif text-6xl md:text-8xl mb-8 italic">Bluorng</h1>
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl mb-6 sm:mb-8 italic">Bluorng</h1>
           
           {/* Circular Badge */}
           <div className="inline-flex items-center justify-center">
-            <div className="relative w-32 h-32">
+            <div className="relative w-24 h-24 sm:w-32 sm:h-32">
               {/* Rotating Text */}
               <svg className="w-full h-full animate-spin-slow" viewBox="0 0 100 100">
                 <path
@@ -58,8 +58,8 @@ export default function AutoplayVideo() {
               
               {/* Center Icon */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-black text-xl font-bold">B</span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-black text-lg sm:text-xl font-bold">B</span>
                 </div>
               </div>
             </div>

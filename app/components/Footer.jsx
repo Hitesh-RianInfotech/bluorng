@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo and Copyright */}
-          <div className='col-span-2 flex flex-col justify-between'>
-            <h2 className="font-serif text-black text-4xl mb-8 italic">Bluorng</h2>
+          <div className='md:col-span-2 flex flex-col justify-between'>
+            <h2 className="font-serif text-black text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-8 italic">Bluorng</h2>
             <p className="text-[10px] text-gray-600">
               © 2025 BLUORNG RETAIL PRIVATE LIMITED, ALL RIGHTS RESERVED.
             </p>
@@ -92,10 +92,10 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-black text-white">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center text-[10px] tracking-wider">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 text-[10px] tracking-wider">
             <span>CONNECT</span>
-            <div className="flex gap-8">
+            <div className="flex gap-4 sm:gap-8">
               <Link href="https://instagram.com" className="hover:underline">
                 INSTAGRAM
               </Link>
@@ -112,8 +112,8 @@ export default function Footer() {
 
       {/* Popular Searches Section */}
       <div className="bg-gray-100 border-t border-gray-200">
-        <div className=" mx-auto px-16 py-8">
-          <h3 className="text-black text-[10px] font-semibold mb-4 tracking-wider">POPULAR SEARCHES</h3>
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-6 sm:py-8">
+          <h3 className="text-black text-[10px] font-semibold mb-3 sm:mb-4 tracking-wider">POPULAR SEARCHES</h3>
           
           {/* Shop by Category */}
           <div className="mb-6">

@@ -15,7 +15,7 @@ export default function Home() {
     <NavbarWithCustomGif/>
     <HomeBackgroundVideo/>
     {/* Spacer to push content below the video */}
-    <div className="relative h-screen" />
+    <div className="relative h-screen min-h-[600px]" />
     <div className="relative z-10">
       <LatestDrop/>
       <AutoplayVideo/>
