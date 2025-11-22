@@ -50,11 +50,20 @@ export default function NavbarWithCustomGif() {
 
       {/* Main Navbar */}
       <nav className="border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className=" px-4 sm:px-6">
           <div className="flex items-center justify-between h-14 sm:h-16">
             {/* Logo */}
             <Link href="/" className="shrink-0 z-10">
-              <h1 className="font-serif text-2xl sm:text-3xl italic text-black">Bluorng</h1>
+              <div className="relative h-20 sm:h-24 md:h-28 w-auto">
+                <Image
+                  src="/images/retro.png"
+                  alt="Retro Louve"
+                  width={150}
+                  height={40}
+                  className="h-full w-auto object-contain"
+                  priority
+                />
+              </div>
             </Link>
 
             {/* Desktop Navigation - Centered */}
@@ -80,7 +89,7 @@ export default function NavbarWithCustomGif() {
               </button>
               
               {/* Animated GIF Icon - Brand Logo */}
-              <Link href="/cart" className="relative">
+              <div className="relative">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-transparent flex items-center justify-center overflow-hidden">
                   <Image
                     src="/images/new.webp"
@@ -91,11 +100,11 @@ export default function NavbarWithCustomGif() {
                     unoptimized
                   />
                 </div>
-              </Link>
+              </div>
 
               {/* Mobile Menu Button */}
               <button
-                className="md:hidden"
+                className="md:hidden text-black"
                 aria-label="Toggle navigation menu"
                 aria-expanded={isMenuOpen}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
